@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>林憶廷網頁</title>
+</head>
+<body>
+    <div class="p-4 m-4 bg-green-100">
+        <div class="p-4 m-4 bg-green-600">
+            <h1 class="text-6xl font-bold text-white text-center">林憶廷網頁</h1>
+        </div>
+        <div class="p-4 m-4 grid grid-cols-3 gap-3 bg-green-300">
+          <div class="bg-green-300 text-left align-text-top w-full">
+          </div>
+          <div class="bg-green-300 text-left align-text-top w-full">
+            <div class="flex items-start h-screen w-full bg-teal-lighter">
+              <div class="w-full bg-orange-100 rounded shadow-lg p-8 m-4 md:max-w-sm md:mx-auto">
+                <h1 class="block w-full text-center text-grey-darkest mb-6 font-bold text-3xl text-purple-600">自己的程式</h1><br>
+                <form class="mb-4 md:flex md:flex-wrap md:justify-between bg-blue-100" action="/" method="post">                    
+                  <div class="field-group mb-4 md:w-full">
+                    <img src="/img/2022053151.png" alt="Tailwind CSS For Absolute Beginners" class="w-full">
+                  </div>
+                  
+                  
+                  <button type="button" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" onclick="Perfect1()">
+                    點讚
+                  </button>
+                  <button type="button" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" onclick="Sorry1()"">
+                    考慮一下
+                </form>
+              </div>
+            </div>
+            
+          </div>
+          <div class="bg-green-300 text-left align-text-top w-full">
+          </div>
+        </div>
+        
+        <div class="p-0 m-0 bg-green-300 h-full">
+            <div class="pt-0">
+                <div class="bg-blue-900 text-center py-4 lg:px-4">
+                    <div class="p-2 bg-blue-800 items-center text-blue-100 leading-none lg:rounded-full flex lg:inline-flex" role="alert">
+                        <span class="flex rounded-full bg-blue-500 uppercase font-bold px-2 py-1 text-xs mr-3">New</span>
+                        <span class="font-semibold mr-2 text-left flex-auto">版權所有 2022/06/01</span>
+                    </div>
+                </div>
+            </div>
+            
+        </div>  
+    </div>
+</body>
+<script>
+  function Perfect1() {
+    alert("感 謝 支 持 !!");
+    document.location.href="/";
+  }
+  
+  function Sorry1() {
+    alert("喔 喔 ?!");
+    document.location.href="/";
+  }
+</script>
+</html>

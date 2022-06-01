@@ -1,0 +1,153 @@
+<!-- 學生: 林憶廷                     -->
+<!-- 日期: 2022/05/31 Tuesday 08:00  -->
+<!-- 題目: Tailwind css0             -->
+<!-- 說明: npm run build             -->
+<!--       live-server build         -->
+<!-- 首頁: http://127.0.0.1:8080/    -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>林憶廷網頁</title>
+</head>
+<body>
+    <div class="p-4 m-4 bg-green-100">
+        <div class="p-4 m-4 bg-green-600">
+            <h1 class="text-6xl font-bold text-white text-center">林憶廷網頁</h1>
+        </div>
+        <div class="p-4 m-4 grid grid-cols-3 gap-3 bg-green-300">
+          <div class="bg-purple-200 text-left align-text-top w-full">
+            
+            <ul class="navigation" style="display: block">
+              <br />
+              <li>
+                <dl>
+                  <dt>
+                    <form class="flex items-center">   
+                      <label for="simple-search" class="sr-only">站內搜尋</label>
+                      <div class="relative w-full">
+                          <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
+                              <svg class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path></svg>
+                          </div>
+                          <input type="text" id="simple-search" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search" required>
+                      </div>
+                      <button type="submit" class="p-2.5 ml-2 text-sm font-medium text-white bg-blue-700 rounded-lg border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg></button>
+                   </form>
+                  </dt>
+                </dl>
+              </li> 
+              <li>
+                <dl>
+                  <dt class="text-2xl bg-red-500 font-bold">
+                    <a>自我學習</a>
+                  </dt>
+                  <dd>
+                    <a class="text-blue-700 font-bold" href='nextleft01.html'>煮菜</a>
+                  </dd>
+                  <dd>
+                    <a class="text-blue-700 font-bold" href='nextleft02.html'>運動</a>
+                  </dd>
+                  <dd>
+                    <a class="text-blue-700 font-bold" href='nextleft02.html'>電影</a>
+                  </dd>
+                  <dd>
+                    <a class="text-blue-700 font-bold" href='nextleft02.html'>投資理財</a>
+                  </dd>
+                </dl>
+              </li>
+        
+              <li>
+                <dl>
+                  <dt class="text-2xl bg-yellow-200 font-bold">
+                    <a>線上學習專區</a>
+                  </dt>
+                </dl>
+              </li>
+        
+              <li>
+                <dl>
+                  <dt class="text-2xl bg-red-500 font-bold">
+                    <a>現代美食</a>
+                  </dt>
+                </dl>
+              </li>
+            <li>
+          </div>
+
+          <div class="bg-pink-300 text-left align-text-top w-full">
+            <div class="flex items-start h-screen w-full bg-teal-lighter">
+              <div class="w-full bg-teal-100 rounded shadow-lg p-8 m-4 md:max-w-sm md:mx-auto">
+                <h1 class="block w-full text-center text-grey-darkest mb-6 font-bold">Sign Up</h1><br>
+                <form class="mb-4 md:flex md:flex-wrap md:justify-between bg-blue-100" action="/" method="post">
+                  <div class="field-group mb-4 md:w-full">
+                    <label class="field-label" for="first_name">First Name</label>
+                    <input class="field md:mr-2 border-2" type="text" name="first_name" id="first_name">
+                  </div>
+                  <div class="field-group mb-4 md:w-full">
+                    <label class="field-label md:ml-2" for="last_name">Last Name</label>
+                    <input class="field md:ml-2 border-2" type="text" name="last_name" id="last_name">
+                  </div>
+                  <div class="field-group mb-4 md:w-full">
+                    <label class="field-label" for="email">Email</label>
+                    <input class="field border-2" type="email" name="email" id="email" placeholder="必填資料">
+                  </div>
+                  <div class="field-group mb-6 md:w-full">
+                    <label class="field-label" for="password">Password</label>
+                    <input class="field border-2" type="password" name="password" id="password" placeholder="******************">
+                    <p class="text-red-500 text-xs italic">Please choose a password.</p>                    
+                  </div>
+                  
+                  <button type="button" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" onclick="window.location.href='main.html'">
+                    同意登入
+                  </button>
+                  <button type="button" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" onclick="window.location.href='account.html'">
+                    帳號申請
+                  </button>
+                  <button type="button" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" onclick="window.location.href='next.html'">
+                    其他
+                  </button>
+                </form>
+              </div>
+            </div>
+            
+          </div>
+          <div class="bg-yellow-300 text-left align-text-top w-full">
+            <div class="p-4 m-4 bg-blue-300">
+              <h1 class="text-3xl font-bold text-white text-center">電腦程式</h1>
+            </div>
+            <div class="bg-fuchsia-100 rounded-lg shadow lg:w-3/4">
+              <ul class="divide-y divide-gray-100">
+                  <li class="p-3 text-red-600 ont-semibold font-bold">
+                    <a href='nextright01.html'>Tailwind CSS</a>
+                  </li>
+                  <li class="p-3 text-red-600 ont-semibold font-bold">
+                    <a href='nextright02.html'>jQuery</a>
+                  </li>
+                  <li class="p-3 text-red-600 ont-semibold font-bold">
+                    <a href='nextright02.html'>Java</a>
+                  </li>
+                  <li class="p-3 text-red-600 ont-semibold font-bold">
+                    <a href='nextright02.html'>C#</a>
+                  </li>
+              </ul>
+          </div> 
+
+          </div>
+        </div>
+        
+        <div class="p-0 m-0 bg-green-300 h-full">
+            <div class="pt-0">
+                <div class="bg-blue-900 text-center py-4 lg:px-4">
+                    <div class="p-2 bg-blue-800 items-center text-blue-100 leading-none lg:rounded-full flex lg:inline-flex" role="alert">
+                        <span class="flex rounded-full bg-blue-500 uppercase font-bold px-2 py-1 text-xs mr-3">New</span>
+                        <span class="font-semibold mr-2 text-left flex-auto">版權所有 2022/06/01</span>
+                    </div>
+                </div>
+            </div>
+            
+        </div>  
+    </div>
+</body>
+</html>
